@@ -1,7 +1,7 @@
 'use strict' ;
 
 /*!
- * Common Custom (base) jQuery plugin v1.8.3
+ * Common Custom (base - Nuketube)
  * V: [0.1 (Guia Tech (João Guilherme))]
  * Copyright 2015, Guia Tech
  * Author: Joao Guilherme C. Prado, Marcondes Silva
@@ -35,27 +35,35 @@ var QueryString = function () {
 nuketube.config = {
 	html5_video_player: 'html5-video-player',
 	time_add_copies: 3000,
+	style_iframe: 'position: absolute',
 
 	let_the_video_plays: function() {
 		var that = this,
 		body = document.getElementById( 'body' ),
 		body_container = document.getElementById( 'body-container' ),
 		head = document.getElementsByTagName( 'head' )[ 0 ],
-		html = document.getElementsByTagName( 'html' )[ 0 ] ;
+		html = document.getElementsByTagName( 'html' )[ 0 ],
+		video_player_nuketube = document.getElementById( 'iframe-video-nuketube' ) ;
 
-		head.parentNode.removeChild( head ) ;
-		body.parentNode.removeChild( body ) ;
-		body_new = document.createElement( 'body' ) ;
-		body_new.setAttribute( 'id', 'body' ) ;
-		body_new.style.background = '#000';
-		body_new.style.margin = '0';
-		clone_video_node = document.createElement( 'div' ) ;
-		clone_video_node.innerHTML = '<iframe width="100%" height="100%" style="position: absolute;" src="\
-			https://www.youtube.com/embed/' + QueryString.v + '?autoplay=1\
-			" frameborder="0" allowfullscreen autoplay></iframe>' ;
-		body_new.appendChild( clone_video_node ) ;
+		if( typeof( video_player_nuketube ) === 'undefined' || video_player_nuketube === null ){
+			head.parentNode.removeChild( head ) ;
+			body.parentNode.removeChild( body ) ;
 
-		html.appendChild( body_new ) ;
+			var body_new = document.createElement( 'body' ) ;
+			body_new.setAttribute( 'id', 'body' ) ;
+			body_new.style.background = '#000';
+			body_new.style.margin = '0';
+
+			var clone_video_node = document.createElement( 'div' ) ;
+			clone_video_node.innerHTML = '<iframe id="iframe-video-nuketube" width="100%" height="100%" style="' + that.style_iframe + '" src="\
+				https://www.youtube.com/embed/' + QueryString.v + '?autoplay=1\
+				" frameborder="0" allowfullscreen autoplay></iframe>' ;
+			body_new.appendChild( clone_video_node ) ;
+
+			html.appendChild( body_new ) ;
+		}else{
+			location.reload() ;
+		}
 	},
 
 	init: function() {

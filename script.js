@@ -5,7 +5,6 @@
  * V: [0.1 (Guia Tech (João Guilherme))]
  * Copyright 2015, Guia Tech
  * Author: Joao Guilherme C. Prado, Marcondes Silva
- * Library dep.: jQuery 1.8.3
  *
  * Plugin for chrome/firefox which removes all the elements from the page and let only the youtube video tag plays
  *

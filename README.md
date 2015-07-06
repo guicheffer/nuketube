@@ -1,6 +1,6 @@
 # Nuketube: Remove distractions from youtube
 
-Chrome extension to removes all the elements from a video page but the video.
+Browser extensions to remove all the elements from a youtube video page but the video.
 
 ## Installing from chrome web store
 

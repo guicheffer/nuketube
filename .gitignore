@@ -1,2 +1,5 @@
 zip-*
 *.DS_Store
+
+# OSX
+.DS_Store

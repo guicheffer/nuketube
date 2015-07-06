@@ -1,4 +1,6 @@
 zip-*
+dist
+
 *.DS_Store
 
 # OSX

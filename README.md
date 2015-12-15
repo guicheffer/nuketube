@@ -4,7 +4,7 @@ Browser extensions to remove all the elements from a youtube video page but the 
 
 ## Installing from chrome web store
 
-[download page](https://chrome.google.com/webstore/detail/nuketube/mejmgjlofdgocnnbifjeihodekoleiio)
+[Download page](https://chrome.google.com/webstore/detail/nuketube/mejmgjlofdgocnnbifjeihodekoleiio)
 
 ## Samples
 

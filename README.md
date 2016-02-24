@@ -4,7 +4,7 @@ Browser extensions to remove all the elements from a youtube video page but the 
 
 ## Installing from chrome web store
 
-[Download page](https://chrome.google.com/webstore/detail/nuketube/mejmgjlofdgocnnbifjeihodekoleiio)
+<a href="https://chrome.google.com/webstore/detail/nuketube/mejmgjlofdgocnnbifjeihodekoleiio" target="_blank">Download page</a>
 
 ## Samples
 
@@ -23,4 +23,4 @@ Browser extensions to remove all the elements from a youtube video page but the 
 
 ## License ([MIT License](http://choosealicense.com/licenses/mit/))
 
-Check it here: [http://guicheffer.mit-license.org/](http://guicheffer.mit-license.org/)
+Check it here: <a href="http://guicheffer.mit-license.org/" target="_blank">guicheffer's MIT License</a>

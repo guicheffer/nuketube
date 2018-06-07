@@ -13,8 +13,8 @@ clean: ## removes `dist` files
 dist-chrome: ## makes a prod version of nuketube plugin
 	make clean
 	mkdir -p dist/
-	cp -R ./chrome/* dist/
-	cd dist/ && zip -r nuketube.zip *
+	cp -R ./src/* dist/
+	cd dist/ && zip -r app.zip *
 
 dist: dist-chrome
 

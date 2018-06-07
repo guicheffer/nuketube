@@ -14,7 +14,7 @@ const initialize = (domContent) => {
 chrome.browserAction.onClicked.addListener((tab) => {
   if (urlRegex.test(tab.url)) {
     chrome.tabs.executeScript({
-      file: './lib/content.js'
+      file: 'content.js'
     }) ;
   }
 })

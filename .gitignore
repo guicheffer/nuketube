@@ -1,5 +1,6 @@
 zip-*
 dist
+chrome.*
 
 *.DS_Store
 

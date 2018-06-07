@@ -7,11 +7,14 @@ help:
 
 # ------------------------------------------------------------------------------------ #
 
-dist-chrome: ## makes a development mode plugin for chrome
-	mkdir -p dist/chrome
-	cp chrome/manifest.json dist/chrome
-	cp -R lib/* dist/chrome
-	zip dist/chrome.zip dist/chrome
+clean: ## removes `dist` files
+	rm -rf ./dist
+
+dist-chrome: ## makes a prod version of nuketube plugin
+	make clean
+	mkdir -p dist/
+	cp -R ./chrome/* dist/
+	cd dist/ && zip -r nuketube.zip *
 
 dist: dist-chrome
 

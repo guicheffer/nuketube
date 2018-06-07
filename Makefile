@@ -10,7 +10,7 @@ help:
 dist-chrome: ## makes a development mode plugin for chrome
 	mkdir -p dist/chrome
 	cp chrome/manifest.json dist/chrome
-	cp -R lib/* dist/chrome
+	cp -R chrome/lib/* dist/chrome/lib
 	zip dist/chrome.zip dist/chrome
 
 dist: dist-chrome

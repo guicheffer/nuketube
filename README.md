@@ -1,4 +1,4 @@
-# Nuketube: Remove distractions from youtube
+# 💥 Nuketube: Remove distractions from youtube
 
 Browser extensions to remove all the elements from a youtube video page but the video.
 
